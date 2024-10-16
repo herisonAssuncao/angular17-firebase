@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: crud-user-angular
+    volumes:
+      - .:/home/node/web
+    ports:
+      - "4200:4200"
+
